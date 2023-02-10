@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-image{
+    /* The image used */
+    background-image: url("./img/pexels-rene-asmussen-1327430.jpg");
+    /* Add the blur effect */
+    filter: blur(0.3rem);
+    -webkit-filter: blur(0.3rem);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index:0
+}
+main{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.tittle{
+    color: #f5e1e2;
+    position: relative;
+    margin: 20vh auto;
+    font-size: calc(5vw + 20px);
+    text-shadow: 
+    -1px -1px 0px rgb(187, 184, 25), 
+    -1px 1px 0px rgb(187, 184, 25),                    
+    1px -1px 0px rgb(187, 184, 25),                  
+    1px 0px 0px rgb(187, 184, 25);
+}
+.container{
+    
+    width: 90vw;
+    height:100px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+
+}
+
+.key{
+    display: flex;
+    width: 3em;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000073;
+    color: white;
+    font-size: calc(0.5vw + 20px);
+    border: 2px solid white;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.active{
+    transform: scale(1.3);
+    border-color: white;
+    box-shadow: 1px 1px 15px yellow;
+}
